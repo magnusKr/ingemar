@@ -17,7 +17,8 @@
 		8A0E18DC20AB593E0013BFC3 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18DB20AB593E0013BFC3 /* PushButton.swift */; };
 		8A0E18DE20AB77990013BFC3 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18DD20AB77990013BFC3 /* Worker.swift */; };
 		8A0E18E020AB89CE0013BFC3 /* IngemarPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18DF20AB89CE0013BFC3 /* IngemarPrediction.swift */; };
-		8A0E18E220AB9E370013BFC3 /* ingemar.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18E120AB9E370013BFC3 /* ingemar.mlmodel */; };
+		8AE63C44213DA2F6003D9A15 /* ingemar.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8AE63C43213DA2F6003D9A15 /* ingemar.mlmodel */; };
+		8AE63C46213DB126003D9A15 /* SettingsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8AE63C45213DB126003D9A15 /* SettingsBundle.bundle */; };
 		8AFA7B63213C6F4E004AE6AF /* PredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA7B62213C6F4E004AE6AF /* PredictionService.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +56,8 @@
 		8A0E18DB20AB593E0013BFC3 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 		8A0E18DD20AB77990013BFC3 /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 		8A0E18DF20AB89CE0013BFC3 /* IngemarPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngemarPrediction.swift; sourceTree = "<group>"; };
-		8A0E18E120AB9E370013BFC3 /* ingemar.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ingemar.mlmodel; path = ../../../../Downloads/ingemar.mlmodel; sourceTree = "<group>"; };
+		8AE63C43213DA2F6003D9A15 /* ingemar.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ingemar.mlmodel; sourceTree = "<group>"; };
+		8AE63C45213DB126003D9A15 /* SettingsBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SettingsBundle.bundle; sourceTree = "<group>"; };
 		8AFA7B62213C6F4E004AE6AF /* PredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +109,7 @@
 		8A0E18AA20AA054B0013BFC3 /* IngemarFinder */ = {
 			isa = PBXGroup;
 			children = (
-				8A0E18E120AB9E370013BFC3 /* ingemar.mlmodel */,
+				8AE63C43213DA2F6003D9A15 /* ingemar.mlmodel */,
 				8A0E18AB20AA054B0013BFC3 /* AppDelegate.swift */,
 				8A0E18AD20AA054B0013BFC3 /* ViewController.swift */,
 				8AFA7B62213C6F4E004AE6AF /* PredictionService.swift */,
@@ -118,6 +120,7 @@
 				8A0E18B220AA054E0013BFC3 /* Assets.xcassets */,
 				8A0E18B420AA054E0013BFC3 /* LaunchScreen.storyboard */,
 				8A0E18B720AA054E0013BFC3 /* Info.plist */,
+				8AE63C45213DB126003D9A15 /* SettingsBundle.bundle */,
 			);
 			path = IngemarFinder;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE63C46213DB126003D9A15 /* SettingsBundle.bundle in Resources */,
 				8A0E18B620AA054E0013BFC3 /* LaunchScreen.storyboard in Resources */,
 				8A0E18B320AA054E0013BFC3 /* Assets.xcassets in Resources */,
 				8A0E18B120AA054B0013BFC3 /* Main.storyboard in Resources */,
@@ -272,11 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A0E18DE20AB77990013BFC3 /* Worker.swift in Sources */,
+				8AE63C44213DA2F6003D9A15 /* ingemar.mlmodel in Sources */,
 				8A0E18AE20AA054B0013BFC3 /* ViewController.swift in Sources */,
 				8AFA7B63213C6F4E004AE6AF /* PredictionService.swift in Sources */,
 				8A0E18AC20AA054B0013BFC3 /* AppDelegate.swift in Sources */,
 				8A0E18E020AB89CE0013BFC3 /* IngemarPrediction.swift in Sources */,
-				8A0E18E220AB9E370013BFC3 /* ingemar.mlmodel in Sources */,
 				8A0E18DC20AB593E0013BFC3 /* PushButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
