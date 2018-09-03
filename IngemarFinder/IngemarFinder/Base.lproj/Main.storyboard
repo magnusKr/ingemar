@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IngemarFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D1u-MV-yvB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="510" id="iiI-3M-6TK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fakestamp" translatesAutoresizingMaskIntoConstraints="NO" id="JSF-mO-01d">
+                                <rect key="frame" x="165" y="300" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="V2Y-rP-6ah"/>
+                                    <constraint firstAttribute="height" constant="200" id="hmw-GT-bpm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="okstamp" translatesAutoresizingMaskIntoConstraints="NO" id="zoS-lx-kZ6">
+                                <rect key="frame" x="165" y="345" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="sCt-cZ-nDf"/>
+                                    <constraint firstAttribute="height" constant="150" id="yLT-SB-ceq"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NR9-K6-FZ9">
+                                <rect key="frame" x="177" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcG-Tv-7zq" customClass="PushButton" customModule="IngemarFinder" customModuleProvider="target">
+                                <rect key="frame" x="137" y="570" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3af-Rn-DUZ"/>
+                                    <constraint firstAttribute="height" constant="100" id="dGU-3y-DZj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cameraButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EmD-xB-xZ9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Håll telefonen mot Stenmark" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6Z-Vn-XER">
+                                <rect key="frame" x="20" y="515" width="335" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.082317623225925951" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NR9-K6-FZ9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9bG-gj-Wep"/>
+                            <constraint firstItem="IcG-Tv-7zq" firstAttribute="top" secondItem="D1u-MV-yvB" secondAttribute="bottom" constant="60" id="NTF-XT-lEQ"/>
+                            <constraint firstItem="D1u-MV-yvB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wve-jR-Kz9"/>
+                            <constraint firstItem="H6Z-Vn-XER" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YLh-fp-waO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H6Z-Vn-XER" secondAttribute="trailing" constant="20" id="eSW-YR-FT4"/>
+                            <constraint firstItem="JSF-mO-01d" firstAttribute="bottom" secondItem="D1u-MV-yvB" secondAttribute="bottom" constant="-10" id="faO-eA-slG"/>
+                            <constraint firstItem="NR9-K6-FZ9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fgy-n2-Cqc"/>
+                            <constraint firstItem="H6Z-Vn-XER" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="h13-1Y-mwm"/>
+                            <constraint firstItem="D1u-MV-yvB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hRd-T0-yhe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JSF-mO-01d" secondAttribute="trailing" constant="10" id="lMl-Ui-7ct"/>
+                            <constraint firstItem="H6Z-Vn-XER" firstAttribute="top" secondItem="D1u-MV-yvB" secondAttribute="bottom" constant="5" id="m1C-U5-igo"/>
+                            <constraint firstItem="zoS-lx-kZ6" firstAttribute="bottom" secondItem="D1u-MV-yvB" secondAttribute="bottom" constant="-15" id="pfJ-kf-VnM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zoS-lx-kZ6" secondAttribute="trailing" constant="10" id="vM4-Gs-EdD"/>
+                            <constraint firstItem="IcG-Tv-7zq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xap-BC-iTz"/>
+                            <constraint firstItem="D1u-MV-yvB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xdy-50-Y3L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="confidenceLabel" destination="H6Z-Vn-XER" id="uDw-Bu-2SC"/>
+                        <outlet property="fakeStamp" destination="JSF-mO-01d" id="vKQ-RB-NtA"/>
+                        <outlet property="imagePicked" destination="D1u-MV-yvB" id="lRT-gA-CUZ"/>
+                        <outlet property="okStamp" destination="zoS-lx-kZ6" id="x3W-TJ-NGU"/>
+                        <outlet property="spinner" destination="NR9-K6-FZ9" id="42f-eQ-eNp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="105.69715142428787"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fakestamp" width="250" height="250"/>
+        <image name="okstamp" width="750" height="562"/>
+    </resources>
+</document>

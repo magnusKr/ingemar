@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A0E18AC20AA054B0013BFC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18AB20AA054B0013BFC3 /* AppDelegate.swift */; };
+		8A0E18AE20AA054B0013BFC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18AD20AA054B0013BFC3 /* ViewController.swift */; };
+		8A0E18B120AA054B0013BFC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0E18AF20AA054B0013BFC3 /* Main.storyboard */; };
+		8A0E18B320AA054E0013BFC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0E18B220AA054E0013BFC3 /* Assets.xcassets */; };
+		8A0E18B620AA054E0013BFC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0E18B420AA054E0013BFC3 /* LaunchScreen.storyboard */; };
+		8A0E18C120AA054E0013BFC3 /* IngemarFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18C020AA054E0013BFC3 /* IngemarFinderTests.swift */; };
+		8A0E18CC20AA054E0013BFC3 /* IngemarFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18CB20AA054E0013BFC3 /* IngemarFinderUITests.swift */; };
+		8A0E18DC20AB593E0013BFC3 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18DB20AB593E0013BFC3 /* PushButton.swift */; };
+		8A0E18DE20AB77990013BFC3 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18DD20AB77990013BFC3 /* Worker.swift */; };
+		8A0E18E020AB89CE0013BFC3 /* IngemarPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18DF20AB89CE0013BFC3 /* IngemarPrediction.swift */; };
+		8A0E18E220AB9E370013BFC3 /* ingemar.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E18E120AB9E370013BFC3 /* ingemar.mlmodel */; };
+		8AFA7B63213C6F4E004AE6AF /* PredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA7B62213C6F4E004AE6AF /* PredictionService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A0E18BD20AA054E0013BFC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A0E18A020AA054B0013BFC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A0E18A720AA054B0013BFC3;
+			remoteInfo = IngemarFinder;
+		};
+		8A0E18C820AA054E0013BFC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A0E18A020AA054B0013BFC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A0E18A720AA054B0013BFC3;
+			remoteInfo = IngemarFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A0E18A820AA054B0013BFC3 /* IngemarFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IngemarFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0E18AB20AA054B0013BFC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A0E18AD20AA054B0013BFC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A0E18B020AA054B0013BFC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A0E18B220AA054E0013BFC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A0E18B520AA054E0013BFC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A0E18B720AA054E0013BFC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0E18BC20AA054E0013BFC3 /* IngemarFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IngemarFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0E18C020AA054E0013BFC3 /* IngemarFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngemarFinderTests.swift; sourceTree = "<group>"; };
+		8A0E18C220AA054E0013BFC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0E18C720AA054E0013BFC3 /* IngemarFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IngemarFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0E18CB20AA054E0013BFC3 /* IngemarFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngemarFinderUITests.swift; sourceTree = "<group>"; };
+		8A0E18CD20AA054E0013BFC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0E18DB20AB593E0013BFC3 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		8A0E18DD20AB77990013BFC3 /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
+		8A0E18DF20AB89CE0013BFC3 /* IngemarPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngemarPrediction.swift; sourceTree = "<group>"; };
+		8A0E18E120AB9E370013BFC3 /* ingemar.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ingemar.mlmodel; path = ../../../../Downloads/ingemar.mlmodel; sourceTree = "<group>"; };
+		8AFA7B62213C6F4E004AE6AF /* PredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A0E18A520AA054B0013BFC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0E18B920AA054E0013BFC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0E18C420AA054E0013BFC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A0E189F20AA054B0013BFC3 = {
+			isa = PBXGroup;
+			children = (
+				8A0E18AA20AA054B0013BFC3 /* IngemarFinder */,
+				8A0E18BF20AA054E0013BFC3 /* IngemarFinderTests */,
+				8A0E18CA20AA054E0013BFC3 /* IngemarFinderUITests */,
+				8A0E18A920AA054B0013BFC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A0E18A920AA054B0013BFC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A0E18A820AA054B0013BFC3 /* IngemarFinder.app */,
+				8A0E18BC20AA054E0013BFC3 /* IngemarFinderTests.xctest */,
+				8A0E18C720AA054E0013BFC3 /* IngemarFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A0E18AA20AA054B0013BFC3 /* IngemarFinder */ = {
+			isa = PBXGroup;
+			children = (
+				8A0E18E120AB9E370013BFC3 /* ingemar.mlmodel */,
+				8A0E18AB20AA054B0013BFC3 /* AppDelegate.swift */,
+				8A0E18AD20AA054B0013BFC3 /* ViewController.swift */,
+				8AFA7B62213C6F4E004AE6AF /* PredictionService.swift */,
+				8A0E18DD20AB77990013BFC3 /* Worker.swift */,
+				8A0E18DF20AB89CE0013BFC3 /* IngemarPrediction.swift */,
+				8A0E18DB20AB593E0013BFC3 /* PushButton.swift */,
+				8A0E18AF20AA054B0013BFC3 /* Main.storyboard */,
+				8A0E18B220AA054E0013BFC3 /* Assets.xcassets */,
+				8A0E18B420AA054E0013BFC3 /* LaunchScreen.storyboard */,
+				8A0E18B720AA054E0013BFC3 /* Info.plist */,
+			);
+			path = IngemarFinder;
+			sourceTree = "<group>";
+		};
+		8A0E18BF20AA054E0013BFC3 /* IngemarFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A0E18C020AA054E0013BFC3 /* IngemarFinderTests.swift */,
+				8A0E18C220AA054E0013BFC3 /* Info.plist */,
+			);
+			path = IngemarFinderTests;
+			sourceTree = "<group>";
+		};
+		8A0E18CA20AA054E0013BFC3 /* IngemarFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A0E18CB20AA054E0013BFC3 /* IngemarFinderUITests.swift */,
+				8A0E18CD20AA054E0013BFC3 /* Info.plist */,
+			);
+			path = IngemarFinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A0E18A720AA054B0013BFC3 /* IngemarFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0E18D020AA054E0013BFC3 /* Build configuration list for PBXNativeTarget "IngemarFinder" */;
+			buildPhases = (
+				8A0E18A420AA054B0013BFC3 /* Sources */,
+				8A0E18A520AA054B0013BFC3 /* Frameworks */,
+				8A0E18A620AA054B0013BFC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IngemarFinder;
+			productName = IngemarFinder;
+			productReference = 8A0E18A820AA054B0013BFC3 /* IngemarFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A0E18BB20AA054E0013BFC3 /* IngemarFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0E18D320AA054E0013BFC3 /* Build configuration list for PBXNativeTarget "IngemarFinderTests" */;
+			buildPhases = (
+				8A0E18B820AA054E0013BFC3 /* Sources */,
+				8A0E18B920AA054E0013BFC3 /* Frameworks */,
+				8A0E18BA20AA054E0013BFC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A0E18BE20AA054E0013BFC3 /* PBXTargetDependency */,
+			);
+			name = IngemarFinderTests;
+			productName = IngemarFinderTests;
+			productReference = 8A0E18BC20AA054E0013BFC3 /* IngemarFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A0E18C620AA054E0013BFC3 /* IngemarFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0E18D620AA054E0013BFC3 /* Build configuration list for PBXNativeTarget "IngemarFinderUITests" */;
+			buildPhases = (
+				8A0E18C320AA054E0013BFC3 /* Sources */,
+				8A0E18C420AA054E0013BFC3 /* Frameworks */,
+				8A0E18C520AA054E0013BFC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A0E18C920AA054E0013BFC3 /* PBXTargetDependency */,
+			);
+			name = IngemarFinderUITests;
+			productName = IngemarFinderUITests;
+			productReference = 8A0E18C720AA054E0013BFC3 /* IngemarFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A0E18A020AA054B0013BFC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Magnus Kraepelien";
+				TargetAttributes = {
+					8A0E18A720AA054B0013BFC3 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					8A0E18BB20AA054E0013BFC3 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 8A0E18A720AA054B0013BFC3;
+					};
+					8A0E18C620AA054E0013BFC3 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 8A0E18A720AA054B0013BFC3;
+					};
+				};
+			};
+			buildConfigurationList = 8A0E18A320AA054B0013BFC3 /* Build configuration list for PBXProject "IngemarFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A0E189F20AA054B0013BFC3;
+			productRefGroup = 8A0E18A920AA054B0013BFC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A0E18A720AA054B0013BFC3 /* IngemarFinder */,
+				8A0E18BB20AA054E0013BFC3 /* IngemarFinderTests */,
+				8A0E18C620AA054E0013BFC3 /* IngemarFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A0E18A620AA054B0013BFC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0E18B620AA054E0013BFC3 /* LaunchScreen.storyboard in Resources */,
+				8A0E18B320AA054E0013BFC3 /* Assets.xcassets in Resources */,
+				8A0E18B120AA054B0013BFC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0E18BA20AA054E0013BFC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0E18C520AA054E0013BFC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A0E18A420AA054B0013BFC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0E18DE20AB77990013BFC3 /* Worker.swift in Sources */,
+				8A0E18AE20AA054B0013BFC3 /* ViewController.swift in Sources */,
+				8AFA7B63213C6F4E004AE6AF /* PredictionService.swift in Sources */,
+				8A0E18AC20AA054B0013BFC3 /* AppDelegate.swift in Sources */,
+				8A0E18E020AB89CE0013BFC3 /* IngemarPrediction.swift in Sources */,
+				8A0E18E220AB9E370013BFC3 /* ingemar.mlmodel in Sources */,
+				8A0E18DC20AB593E0013BFC3 /* PushButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0E18B820AA054E0013BFC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0E18C120AA054E0013BFC3 /* IngemarFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0E18C320AA054E0013BFC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0E18CC20AA054E0013BFC3 /* IngemarFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A0E18BE20AA054E0013BFC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A0E18A720AA054B0013BFC3 /* IngemarFinder */;
+			targetProxy = 8A0E18BD20AA054E0013BFC3 /* PBXContainerItemProxy */;
+		};
+		8A0E18C920AA054E0013BFC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A0E18A720AA054B0013BFC3 /* IngemarFinder */;
+			targetProxy = 8A0E18C820AA054E0013BFC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A0E18AF20AA054B0013BFC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0E18B020AA054B0013BFC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A0E18B420AA054E0013BFC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0E18B520AA054E0013BFC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A0E18CE20AA054E0013BFC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A0E18CF20AA054E0013BFC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A0E18D120AA054E0013BFC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25NECRJXH5;
+				INFOPLIST_FILE = IngemarFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.devmagnus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A0E18D220AA054E0013BFC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25NECRJXH5;
+				INFOPLIST_FILE = IngemarFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.devmagnus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A0E18D420AA054E0013BFC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25NECRJXH5;
+				INFOPLIST_FILE = IngemarFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnus.kraepelien.IngemarFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IngemarFinder.app/IngemarFinder";
+			};
+			name = Debug;
+		};
+		8A0E18D520AA054E0013BFC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25NECRJXH5;
+				INFOPLIST_FILE = IngemarFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnus.kraepelien.IngemarFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IngemarFinder.app/IngemarFinder";
+			};
+			name = Release;
+		};
+		8A0E18D720AA054E0013BFC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25NECRJXH5;
+				INFOPLIST_FILE = IngemarFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnus.kraepelien.IngemarFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IngemarFinder;
+			};
+			name = Debug;
+		};
+		8A0E18D820AA054E0013BFC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25NECRJXH5;
+				INFOPLIST_FILE = IngemarFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnus.kraepelien.IngemarFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IngemarFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A0E18A320AA054B0013BFC3 /* Build configuration list for PBXProject "IngemarFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0E18CE20AA054E0013BFC3 /* Debug */,
+				8A0E18CF20AA054E0013BFC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0E18D020AA054E0013BFC3 /* Build configuration list for PBXNativeTarget "IngemarFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0E18D120AA054E0013BFC3 /* Debug */,
+				8A0E18D220AA054E0013BFC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0E18D320AA054E0013BFC3 /* Build configuration list for PBXNativeTarget "IngemarFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0E18D420AA054E0013BFC3 /* Debug */,
+				8A0E18D520AA054E0013BFC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0E18D620AA054E0013BFC3 /* Build configuration list for PBXNativeTarget "IngemarFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0E18D720AA054E0013BFC3 /* Debug */,
+				8A0E18D820AA054E0013BFC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A0E18A020AA054B0013BFC3 /* Project object */;
+}
