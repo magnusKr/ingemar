@@ -27,7 +27,7 @@ struct PredictionService {
     }
 
     //Use server side Model
-    func getPredictionFromServerMachine(_ image: UIImage, completion: @escaping (IngemarPredictions) -> ()){
+    private func getPredictionFromServerMachine(_ image: UIImage, completion: @escaping (IngemarPredictions) -> ()){
         guard let compressData = UIImageJPEGRepresentation(image, 0.5) else { return }
         Worker().makeHTTPPost(data: compressData){ ingemarPredections in
             DispatchQueue.main.async(execute: {
@@ -36,7 +36,7 @@ struct PredictionService {
         }
     }
     //Use local mlmodel
-    func getResultFromLocalMachine(_ image: UIImage, completion: @escaping (VNClassificationObservation) -> ()) {
+    private func getResultFromLocalMachine(_ image: UIImage, completion: @escaping (VNClassificationObservation) -> ()) {
         guard let model = try? VNCoreMLModel(for: ingemar().model), let pixelBuffer = buffer(from: image) else { return }
 
         let request = VNCoreMLRequest(model: model) {(finishedRequest, error) in
@@ -49,7 +49,7 @@ struct PredictionService {
         try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
     }
 
-    func buffer(from image: UIImage) -> CVPixelBuffer? {
+    private func buffer(from image: UIImage) -> CVPixelBuffer? {
         let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue, kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
         var pixelBuffer : CVPixelBuffer?
         let status = CVPixelBufferCreate(kCFAllocatorDefault, Int(image.size.width), Int(image.size.height), kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
