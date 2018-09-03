@@ -1,10 +1,3 @@
-//
-//  PushButton.swift
-//  IngemarFinder
-//
-//  Created by Magnus Kraepelien on 2018-05-15.
-//  Copyright © 2018 Magnus Kraepelien. All rights reserved.
-//
 import UIKit
 @IBDesignable
 
@@ -21,9 +14,7 @@ class PushButton: UIButton {
         
         let plusWidth: CGFloat = min(bounds.width, bounds.height) * Constants.plusButtonScale
         let halfPlusWidth = plusWidth / 2
-        
-        
-        
+
         let plusPath = UIBezierPath()
         
         plusPath.lineWidth = Constants.plusLineWidth
@@ -49,7 +40,6 @@ class PushButton: UIButton {
             x: halfWidth + halfPlusWidth + Constants.halfPointShift,
             y: halfHeight + Constants.halfPointShift
         ))
-        
         
         UIColor.white.setStroke()
         

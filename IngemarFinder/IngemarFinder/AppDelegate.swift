@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  IngemarFinder
-//
-//  Created by Magnus Kraepelien on 2018-05-14.
-//  Copyright © 2018 Magnus Kraepelien. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
