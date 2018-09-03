@@ -10,7 +10,7 @@ struct Worker {
     
     func makeHTTPPost(data: Data, completion: @escaping (IngemarPredictions) -> ()) {
         let baseURL = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/"
-        let key = "3af81597-fa2c-434a-8a20-57bf8fcbde63/image?iterationId=72c2e889-db98-4c5f-9a8e-94eafd98784d"
+        let key = ""
 
         guard let endpointUrl = URL(string: baseURL+key) else { return }
         var UrlRequest = URLRequest(url: endpointUrl)
