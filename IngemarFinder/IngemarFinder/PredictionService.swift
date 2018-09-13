@@ -37,7 +37,8 @@ struct PredictionService {
     }
     //Use local mlmodel
     private func getResultFromLocalMachine(_ image: UIImage, completion: @escaping (VNClassificationObservation) -> ()) {
-        guard let model = try? VNCoreMLModel(for: ingemar().model), let pixelBuffer = buffer(from: image) else { return }
+        guard let model = try? VNCoreMLModel(for: ingemar().model), let imageData = UIImagePNGRepresentation(image) else { return }
+
 
         let request = VNCoreMLRequest(model: model) {(finishedRequest, error) in
             guard error == nil else { return }
@@ -46,7 +47,7 @@ struct PredictionService {
                 completion(observation)
             })
         }
-        try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
+        try? VNImageRequestHandler(data: imageData, options: [:]).perform([request])
     }
 
     private func buffer(from image: UIImage) -> CVPixelBuffer? {
